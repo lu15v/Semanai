@@ -4,7 +4,7 @@ class CreateGhGateway < ActiveRecord::Migration
       name: 'GHPAY',
       description: 'Custom Gateway for iweek',
       active: true,
-      environment: 'development')
+      preferences: { server: "test", test_mode: true })
   end
   def down
   end
