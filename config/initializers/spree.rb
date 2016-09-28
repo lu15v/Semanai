@@ -16,3 +16,8 @@ Spree.config do |config|
 end
 
 Spree.user_class = "Spree::User"
+
+# Register new gateway
+Rails.application.config.spree.payment_methods << Spree::Gateway::Ghpay
+
+#Spree::Store.first.payment_methods << payment_method
